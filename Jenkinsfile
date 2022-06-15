@@ -4,13 +4,13 @@ pipeline {
         maven 'M2_HOME'
     }
     environment {
-        registry = '076892551558.dkr.ecr.us-east-1.amazonaws.com/geolocation_ecr_rep'
+        registry = '685856119338.dkr.ecr.us-east-1.amazonaws.com/geolocation_ecr_rep'
         dockerimage = '' 
     }
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/Hermann90/geolocation.git'
+                git branch: 'main', url: 'https://github.com/foleric/geolocation1.git'
             }
         }
         stage('Code Build') {
